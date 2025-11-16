@@ -1,0 +1,105 @@
+# ==========================================
+# Python
+# ==========================================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+*.egg
+*.manifest
+*.spec
+
+# Virtual environments
+.env/
+.venv/
+venv/
+ENV/
+env/
+pip-wheel-metadata/
+
+# Cache
+*.cache/
+.cache/
+.ipynb_checkpoints/
+.pytest_cache/
+.DS_Store
+
+# ==========================================
+# Project-specific ignores
+# ==========================================
+
+# Model checkpoints / weights
+*.pth
+*.pt
+*.ckpt
+
+# Grad-CAM outputs
+gradcam_outputs/
+gradcam_heatmap.png
+gradcam_overlay.png
+
+# Uploaded images (Streamlit)
+uploaded_images/
+temp_images/
+
+# Results
+results/
+predictions/
+logs/
+
+# ==========================================
+# Streamlit
+# ==========================================
+.streamlit/credentials.toml
+.streamlit/config.toml
+.streamlit/secrets.toml
+.streamlit/
+
+# Streamlit's cache directories
+**/.streamlit/
+**/.local/share/streamlit/
+**/streamlit_cache/
+**/.streamlit_cache/
+
+# ==========================================
+# IDEs & Editors
+# ==========================================
+
+# VS Code
+.vscode/
+.history/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+
+# Jupyter
+.ipynb_checkpoints/
+jupyter-cache/
+
+# ==========================================
+# OS / System files
+# ==========================================
+Thumbs.db
+Desktop.ini
+ehthumbs.db
+
+# ==========================================
+# Conda
+# ==========================================
+conda-meta/
+pkgs/
+*.conda
+*.yml.backup
+
+# ==========================================
+# Data folders (optional)
+# Comment out if you want to track them
+# ==========================================
+data/
+datasets/
+chest_xray/
+COVIDx/
